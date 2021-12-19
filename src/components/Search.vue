@@ -11,6 +11,7 @@
           placeholder="Cari Karier"
           aria-label="Karier"
           aria-describedby="basic-addon1"
+          @keyup="searchPekerjaan"
         />
       </div>
       <div class="form-group col-md-4">
@@ -37,8 +38,26 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   name: "Search",
+  data() {
+    return {
+      perkerjaan: [],
+      search: [],
+    };
+  },
+  methods: {
+    setPekerjaan(data) {
+      this.pekerjaan = data;
+    },
+    searchPekerjaan() {
+      axios
+        .get("http://localhost:3000/pekerjaan?q=" + this.search)
+        .then((response) => this.setPekerjaan(response.data))
+        .catch((error) => console.log("Gagal : ", error));
+    },
+  },
 };
 </script>
 
