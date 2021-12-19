@@ -4,7 +4,7 @@
       <div class="container">
           <div class="row">
               <div class="col text-center">
-                  2020 Copyright Krisna
+                  2021 Copyright Krisna
               </div>
           </div>
       </div>

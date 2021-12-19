@@ -21,8 +21,7 @@
           temporibus optio quibusdam suscipit!
         </p>
       </div>
-      <div class="col-md-6">
-        <img class="gambar mt-3" src="berita2.png" alt="">
+      <div class="col-md-6 gambar">
       </div>
     </div>
   </div>
@@ -52,8 +51,9 @@ h4{
   margin-top: 100px
 }
 .gambar{
-  width: 400px;
-  height: auto;
+  height: 400px;
   float: right;
+  background-image: url(../assets/berita2.png);
+  background-size: cover; 
 }
 </style>

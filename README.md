@@ -22,3 +22,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### jalankan back-end
+```
+json-server --watch db.json
+```

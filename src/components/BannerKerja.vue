@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container navbar-all">
     <div class="row navbar-cont">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -14,7 +14,7 @@
                 >
               </li>
               <li class="nav-item">
-                <router-link class="nav-link" to="/listpekerjaan">Lowongan Kerja</router-link>
+                <router-link class="nav-link" to="/listpekerjaan/1">Lowongan Kerja</router-link>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Nilai-Nilai Kompas</a>
@@ -46,7 +46,7 @@
 <script>
 import Search from "./Search.vue";
 export default {
-  name: "Navbar",
+  name: "BannerKerja",
   components: {
     Search,
   },
@@ -123,4 +123,10 @@ img {
   margin-top: -75px;
   width: 100%;
 }
+
+.navbar-all{
+  background-image: url("../assets/bg.png");
+  height: 450px;
+}
 </style>
+

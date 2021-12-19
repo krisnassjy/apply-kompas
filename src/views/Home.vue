@@ -1,6 +1,6 @@
 <template>
 <div class="home">
-  <Navbar/>
+  <BannerHome/>
   <Tujuan/>
   <Kata/>
 </div>
@@ -8,14 +8,14 @@
 
 <script>
 // @ is an alias to /src
-import Navbar from '@/components/Navbar.vue'
+import BannerHome from '@/components/BannerHome.vue'
 import Tujuan from '@/components/Tujuan.vue'
 import Kata from '@/components/Kata.vue'
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    Navbar,
+    BannerHome,
     Tujuan,
     Kata
   }
