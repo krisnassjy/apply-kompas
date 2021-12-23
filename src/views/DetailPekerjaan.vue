@@ -1,17 +1,17 @@
 <template>
   <div class="detil">
-      <BannerKerja/>
+      <BannerHome/>
       <DetailKerja/>
   </div>
 </template>
 
 <script>
-import BannerKerja from '@/components/BannerKerja.vue'
+import BannerHome from '@/components/BannerHome.vue'
 import DetailKerja from '@/components/DetailKerja.vue'
 export default {
     name: 'DetailPekerjaan',
     components: {
-        BannerKerja,
+        BannerHome,
         DetailKerja
     }
 }

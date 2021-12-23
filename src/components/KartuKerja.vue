@@ -1,27 +1,27 @@
 <template>
   <div class="card kartu bg-light mb-3">
-    <div class="card-body">
-      <div class="row">
+    <div class="card-body h-100">
+      <div class="row ">
         <div class="col-md-4">
           <div class="row-md-6">
-            <h3>{{ pekerjaan.lowongan }}</h3>
+            <h3>{{ karir.lowongan }}</h3>
           </div>
           <div class="row-md-6">
-            {{ pekerjaan.perusahaan }}
+            {{ karir.perusahaan }}
             <h1></h1>
           </div>
         </div>
         <div class="col-md-4">
           <b-icon-shield-lock-fill></b-icon-shield-lock-fill>
-          {{ pekerjaan.lokasi }}
+          {{ karir.lokasi }}
         </div>
         <div class="col-md-2.2">
           <div class="alert alert-success" role="alert">
-            {{ pekerjaan.waktu}}
+            {{ karir.waktu}}
           </div>
         </div>
         <div class="col-md-1">
-          <router-link :to="'/detailpekerjaan/' +pekerjaan.id_jenis" variant="light" class="btn btn-success"
+          <router-link :to="'/detailpekerjaan/' +karir.id" variant="light" class="btn btn-success"
             ><b-icon-arrow-right></b-icon-arrow-right></router-link
           >
         </div>
@@ -33,7 +33,7 @@
 <script>
 export default {
   name: "KartuKerja",
-  props: ["pekerjaan"],
+  props: ["karir"],
   mounted: function () {
     console.log(this.pekerjaan);
   },
@@ -44,6 +44,7 @@ export default {
 .card-body {
   width: 700px;
   height: 150px;
+  margin: 0px auto;
 }
 .alert {
   margin-top: 15px;

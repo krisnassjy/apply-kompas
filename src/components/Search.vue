@@ -1,5 +1,5 @@
 <template>
-  <div class="isian">
+  <!-- <div class="isian">
     <form action="" class="form">
       <div class="input-group col-md-4 mt-2 mr-0">
         <span class="input-group-text" id="basic-addon1"
@@ -34,7 +34,8 @@
       </div>
       <button class="btn btn-success mt-2 mr-2"><b-icon-search></b-icon-search></button>
     </form>
-  </div>
+  </div> -->
+  <div></div>
 </template>
 
 <script>

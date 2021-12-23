@@ -6,15 +6,15 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="main">
-                <a class="nav-link-main" href="#">Kompas</a>
+                <a class="nav-link-main" href="/">Kompas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="./#tujuan"
                   >Tujuan Kami</a
                 >
               </li>
               <li class="nav-item">
-                <router-link class="nav-link" to="/listpekerjaan/1">Lowongan Kerja</router-link>
+                <router-link class="nav-link" to="/listpekerjaan">Lowongan Kerja</router-link>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Nilai-Nilai Kompas</a>
@@ -36,19 +36,16 @@
         <h4>Jadilah Bagian Dari Perubahan Indonesia</h4>
         <p>Bekerja dengan hati dan dedikasi bersama kami</p>
       </div>
-      <div class="search">
-        <Search />
-      </div>
     </div>
   </div>
 </template>
 
 <script>
-import Search from "./Search.vue";
+// import Search from "./Search.vue";
 export default {
   name: "BannerKerja",
   components: {
-    Search,
+    // Search,
   },
 };
 </script>
@@ -74,11 +71,11 @@ export default {
   color: white;
 }
 
-.search {
+/* .search {
   position: absolute;
   z-index: 1;
   margin-top: 300px;
-}
+} */
 
 .isi h4 {
   font-weight: bold;

@@ -1,29 +1,29 @@
 <template>
-  <div class="container navbar-all">
+  <div class="container bannerhome navbar-all">
     <div class="row navbar-cont">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="main">
-                <a class="nav-link-main" href="#">Kompas</a>
+                <a class="nav-link-main" href="/">Kompas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="/#tujuan"
                   >Tujuan Kami</a
                 >
               </li>
               <li class="nav-item">
-                <router-link class="nav-link" to="/listpekerjaan/1">Lowongan Kerja</router-link>
+                <router-link class="nav-link" to="/listpekerjaan">Lowongan Kerja</router-link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Nilai-Nilai Kompas</a>
+                <a class="nav-link" href="/#nilai">Nilai-Nilai Kompas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Keseharian Kami</a>
+                <a class="nav-link" href="/#keseharian">Keseharian Kami</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Mengenal Kami</a>
+                <a class="nav-link" href="/#mengenal">Mengenal Kami</a>
               </li>
             </ul>
           </div>

@@ -1,6 +1,6 @@
 <template>
-  <div class="container mt-5">
-    <div class="row">
+  <div class="container tujuan mt-5" id="tujuan">
+    <div class="row tujuan">
       <h2>Tujuan Kami</h2>
     </div>
     <div class="row tulisan">
@@ -55,5 +55,8 @@ h4{
   float: right;
   background-image: url(../assets/berita2.png);
   background-size: cover; 
+}
+.tujuan{
+ margin-top: 100px;
 }
 </style>
